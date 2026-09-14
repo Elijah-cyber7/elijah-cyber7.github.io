@@ -107,6 +107,7 @@
     font-family:"Barlow Condensed", sans-serif; padding:18px;
   }
   .shot img{width:100%; height:auto; display:block; border-radius:3px;}
+  .shot:has(img){border:1px solid var(--line); padding:0; min-height:0;}
 
   /* Stories */
   .stories{
@@ -179,7 +180,7 @@
     <p class="lede">Visitors browse a film catalog, search it, review what they've seen, fill a cart, and check out. Administrators manage everything behind it.</p>
 
     <div class="screen">
-      <div class="shot">Screenshot: home and about</div>
+      <<div class="shot"><img src="images/home.png" alt="Home page"></div>
       <div>
         <h3>Home and About</h3>
         <p>A landing page introducing the store, and an About page describing what it offers. Both sit in the navigation on every page.</p>
@@ -188,7 +189,7 @@
     </div>
 
     <div class="screen">
-      <div class="shot">Screenshot: catalog with search</div>
+      <div class="shot"><img src="images/catalog.png" alt="Movie catalog with search"></div>
       <div>
         <h3>Catalog and search</h3>
         <p>Films appear as a grid of posters with titles and prices. The search field matches partial titles, case-insensitively, so a fragment is enough.</p>
@@ -197,7 +198,7 @@
     </div>
 
     <div class="screen">
-      <div class="shot">Screenshot: film detail</div>
+      <div class="shot"><img src="images/detail.png" alt="Film detail page with reviews"></div>
       <div>
         <h3>Film detail and reviews</h3>
         <p>Full description, price, poster, and the review thread. A quantity selector adds copies to the cart; signed-in visitors get a review form, and can edit or delete their own reviews. Someone else's review shows a Report control instead — reporting hides it from the page.</p>
@@ -206,7 +207,7 @@
     </div>
 
     <div class="screen">
-      <div class="shot">Screenshot: cart and orders</div>
+      <div class="shot"><img src="images/cart.png" alt="Shopping cart"></div>
       <div>
         <h3>Cart, checkout, and order history</h3>
         <p>The cart lives in the session, so items survive navigation without an account. It shows each film, quantity, and running total, and empties in one action. Checkout requires signing in and writes a permanent order; every account has a page of past orders with dates and totals.</p>
@@ -215,7 +216,7 @@
     </div>
 
     <div class="screen">
-      <div class="shot">Screenshot: Django admin</div>
+      <div class="shot"><img src="images/admin.png" alt="Django admin"></div>
       <div>
         <h3>Administration</h3>
         <p>Films, reviews, review reports, orders, and accounts are all managed through the Django admin, with full create, update, and delete across each.</p>
@@ -224,7 +225,7 @@
     </div>
 
     <div class="screen">
-      <div class="shot">Screenshot: mobile layout</div>
+      <div class="shot"><img src="images/mobile.png" alt="Store on a phone"></div>
       <div>
         <h3>Responsive across devices</h3>
         <p>A Bootstrap grid and a collapsing navigation bar carry the layout from desktop down to phone, in any modern browser.</p>
